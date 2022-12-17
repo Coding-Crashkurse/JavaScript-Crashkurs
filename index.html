@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container" id="mycontainer">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, itaque.</p>
+    </div>
+    <button id="elemHandler">Add Element</button>
+    <input type="text" id="textInputHandler">
+
+</body>
+
+</html>
+
+<script>
+    const elem = document.getElementById('mycontainer');
+    const btn = document.getElementById('elemHandler');
+    const textInputHandler = document.getElementById("textInputHandler");
+    let textinput;
+
+    btn.addEventListener("click", function () {
+        addElem(textinput)
+    });
+
+    textInputHandler.addEventListener('input', (e) => {
+        textinput = e.target.value;
+
+    });
+
+    const addElem = (textinput) => {
+        const neuesElement = document.createElement("p");
+        neuesElement.innerText = textinput;
+        neuesElement.classList.add("styled")
+        elem.appendChild(neuesElement);
+
+    }
+</script>
+
+<style>
+    .styled {
+        color: white;
+        background-color: blue;
+        padding: 5px;
+    }
+</style>
