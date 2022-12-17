@@ -19,9 +19,9 @@ To get started with this tutorial, you will need a code editor and a web browser
 The tutorial is divided into several files:
 
 - `ES6.js`: Contains the code for the ES6 features covered in the tutorial
-- `modules.js`: Contains the code for the Modules section of the tutorial
+- `modules.js/default.js/imports.js`: Contains the code for the Modules section of the tutorial
 - `oop.js`: Contains the code for the Classes and OOP section of the tutorial
-- `dom.js`: Contains the code for the DOM manipulation section of the tutorial
+- `index.html`: Contains the code for the DOM manipulation section of the tutorial
 
 You can view the results of the code by opening each file in a web browser or by running the code in a code editor with a JavaScript runtime.
 
